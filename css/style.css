@@ -1,0 +1,261 @@
+body {
+
+}
+
+/* Start Home section */
+.navbar-brand {
+  font-size: 2.5rem!important;
+  font-weight: 800;
+  letter-spacing: normal;
+  position: fixed;
+  z-index: 1050;
+}
+.nav-link  {
+  color: white;
+  font-weight: 600;
+  padding: 1.2rem;
+}
+.landing {
+  z-index: -1;
+  overflow: hidden;
+  display: none;
+}
+.home-inner {
+  background-image: url(https://static.wixstatic.com/media/90dbc3_b7d26205197a48379625a4a735645d0a~mv2.jpg/v1/fill/w_1500,h_787,al_c,q_85/90dbc3_b7d26205197a48379625a4a735645d0a~mv2.webp);
+  top: 56px;
+  position: relative;
+  left: none;
+  height: 600px;
+  background-size: cover;
+}
+
+/* Startswiper */
+.swiper-container {
+  height: 680px;
+}
+.swiper-slide img {
+  height: 100%;
+  width: 100%;
+}
+/* End Swiper  */
+
+.caption {
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  /* width: 100%; */
+  max-width: 100%;
+  transform: translateY(-40%);
+  /* display: none; */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.caption h1 {
+  font-size: 7rem;
+  font-weight: 800;
+  text-shadow: 10px -8px 10px black;
+  letter-spacing: 1rem;
+  color: white;
+}
+/* End Home section */
+
+
+/* Start Contact-top section */
+#contact-top .jumbotron {
+  margin-bottom: 0px;
+  background-color: black;
+}
+#contact-top h3 {
+  color: white;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+#contact-top .btn {
+  font-weight: 600;
+}
+/* End Contact-top section */
+
+
+/* Start Team philosophy section */
+#team-philosophy {
+  position: relative;
+}
+.intro {
+  padding: 30px 24px;
+  background-image: url(https://static.wixstatic.com/media/90dbc3_f8261c278bd549cf9592f2dc4dd53af6~mv2.jpg/v1/fill/w_1118,h_942,al_c,q_85,usm_0.66_1.00_0.01/90dbc3_f8261c278bd549cf9592f2dc4dd53af6~mv2.webp);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  background-position: center center;
+  opacity: 0.2;
+  background-attachment: fixed;
+}
+.intro-text {
+  opacity: 1;
+  position: absolute;
+  left:50%;
+  top: 15%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.team-name {
+  color: red;
+  font-weight: 800!important;
+  text-shadow: 1px 1px 1px white;
+  font-size: 3rem!important;
+}
+.intro-text h1, h4, p {
+  font-weight: 800!important;
+}
+.intro-text p {
+  margin-bottom: 0.1rem!important;
+}
+/* End Team philosophy section */
+
+
+/* Start Team introduction  */
+#team-introduction .heading {
+  margin-top: 2rem;
+  font-weight: 700;
+}
+#team-introduction .heading-underline {
+  border-top: 1px solid black;
+  width: 20%;
+  margin: 1rem auto;
+}
+.team-info-box {
+  margin: 0px auto 2rem;
+}
+.team-info-box table {
+  width: 100%;
+  margin: 1rem;
+}
+.team-info-box th,
+.team-info-box td {
+  border: solid 1px black;
+  padding: 1rem;
+}
+.team-info-box th {
+  text-align: center;
+  width: 30%;
+}
+.team-info-box td {
+  padding-left: 1rem;
+  width: 70%;
+}
+/* End Team introduction */
+
+/* Start Player Profile */
+#player-profile {
+  background-color: black;
+  overflow: hidden;
+}
+#player-profile .heading {
+  margin-top: 2rem;
+  color: white;
+  font-weight: 700;
+}
+#player-profile .heading-underline {
+  border-top: 1px solid white;
+  width: 20%;
+  margin: 1rem auto 3rem;
+}
+.swiper-container1 {
+  position: relative;
+}
+.swiper-button-next1 {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
+  right: 10px;
+  left: auto;
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  height: 44px;
+  margin-top: -22px;
+  z-index: 10;
+  cursor: pointer;
+  background-size: 27px 44px;
+  background-position: center;
+  background-repeat: no-repeat;
+  list-style: none;
+  box-sizing: border-box;
+}
+.swiper-button-prev1 {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
+  left: 10px;
+  right: auto;
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  height: 44px;
+  margin-top: -22px;
+  z-index: 10;
+  cursor: pointer;
+  background-size: 27px 44px;
+  background-position: center;
+  background-repeat: no-repeat;
+  list-style: none;
+  box-sizing: border-box;
+}
+.swiper-pagination1 {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  transition: .3s opacity;
+  transform: translate3d(0,0,0);
+  z-index: 10;
+  box-sizing: border-box;
+}
+.btn-player {
+  margin: 3rem auto;
+}
+
+
+/* End Player Profile */
+
+/* Start Contactform */
+#contact-form {
+  background-image: url("https://static.wixstatic.com/media/90dbc3_6932f7543ca84cd183447495293d68b0~mv2.jpg/v1/fill/w_800,h_532,al_t,q_85/90dbc3_6932f7543ca84cd183447495293d68b0~mv2.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 0px;
+}
+#contact-form .contact-form-img {
+  padding: 0px;
+}
+#contact-form .message-box {
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#contact-form h2 {
+  color: black;
+  padding: 3rem 0px;
+  font-weight: 800;
+  opacity: 1;
+
+
+}
+
+
+
+
+/* End Contactform */
+
+
+
+
+
+/* Start Footer */
+footer {
+
+
+}
+
+
+
+/* End Footer */
