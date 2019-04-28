@@ -97,7 +97,11 @@
     padding: .3rem .5rem;
   }
   #contact-top .modal-content {
-    width: 80%;
+    width: 100%;
+  }
+  #contact-top iframe {
+    width: 100%;
+    margin: 0 auto;
   }
   #team-philosophy .intro {
     height: 330px;
