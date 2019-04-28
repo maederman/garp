@@ -74,6 +74,7 @@
           </ul>
         </div>
       </div>
+
       <!-- End Navigation  -->
 
       <!-- Start Landing-Page -->
@@ -118,19 +119,19 @@
           <div id="carouselControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="https://static.wixstatic.com/media/90dbc3_b7d26205197a48379625a4a735645d0a~mv2.jpg/v1/fill/w_1500,h_787,al_c,q_85/90dbc3_b7d26205197a48379625a4a735645d0a~mv2.webp" alt="">
+                <img src="img/top-img/top-img1" alt="">
                 <div class="carousel-caption">
                   <h1>GARP</h1>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="https://static.wixstatic.com/media/90dbc3_32a875ccf7834f42b7df3729660aa66d~mv2.jpg/v1/fill/w_1500,h_787,al_b,q_85/90dbc3_87cbe0b7b0194d14a18b8f171aa4429a_mv2_d_4928_3264_s_4_2.webp" alt="">
+                <img src="img/top-img/top-img2" alt="">
                 <div class="carousel-caption">
                   <h1>GARP</h1>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="img/top-img-1.png" alt="">
+                <img src="img/top-img/top-img3.png" alt="">
                 <div class="carousel-caption">
                   <h1>GARP</h1>
                 </div>
@@ -271,8 +272,8 @@
           <div class="swiper-slide"><img src="img/player/player-img9.png" alt="Swiper01"></div>
         </div>
       <div class="swiper-pagination1"></div>
-      <div class="swiper-button-prev1"></div>
-      <div class="swiper-button-next1"></div>
+      <!-- <div class="swiper-button-prev1"></div>
+      <div class="swiper-button-next1"></div> -->
     </div>
 
       <div class="text-center">
@@ -1906,6 +1907,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+
     <!-- swiper用 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script>
@@ -1969,6 +1971,18 @@
       var scroll = new SmoothScroll('a[href*="#"]');
     </script>
     <!-- End Smooth Scroll用 -->
+    <!-- <script>
+        $(document).ready(function () {
+            $(".navbar-nav a").click(function(event) {
+                $(".navbar-collapse").collapse('hide');
+            });
+        });
+    </script> -->
+    <script>
+    $('.navbar-nav>li>a').on('click', function(){
+        $('.navbar-collapse').collapse('hide');
+    });
+</script>
 
 
 
