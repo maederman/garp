@@ -120,7 +120,6 @@
   }
   #team-introduction h3 {
     font-size: 1rem;
-    margin-top: 1rem!important;
   }
   #team-introduction .heading-underline {
     margin: .5rem auto;
@@ -144,30 +143,35 @@
     margin: .5rem auto;
     width: 40%;
   }
+  #player-profile .modal-header {
+    padding: .3rem;
+  }
   #player-profile .modal-content {
     width:90%!important;
   }
    #player-profile .modal-body {
     flex-direction: column-reverse;
+    padding: 0px;
   }
   #player-profile h1 {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   #player-profile h3 {
     font-size: 1rem;
   }
   #player-profile table {
-    font-size: .5rem;
+    font-size: .7rem;
     line-height: .7rem;
   }
 
   #player-profile .modal-left {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
+    padding: .2rem;
   }
   #player-profile .modal-right {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
   }
   #player-profile .btn {
     margin: 1.5rem auto!important;
@@ -232,6 +236,9 @@
   }
   footer h5 {
     margin: 1rem;
+  }
+  #back-to-top {
+    right: 20px!important;
   }
 
 
