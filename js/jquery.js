@@ -2,7 +2,7 @@ $(function(){
 
   // 競合はしなくなったので、普通に書いても大丈夫？
   $("#back-to-top").click(function() {
-  $('body, html').animate({scrollTop: 0},300);
+  $('body, html').animate({scrollTop: 0},1500);
 });
 
 // $("h1").hide().fadeIn('slow');
