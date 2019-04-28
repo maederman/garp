@@ -22,7 +22,10 @@
     </script>
 
     <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
 
   </head>
   <body>
@@ -31,18 +34,24 @@
     <div id="home">
 
       <!-- Start Navigation -->
-      <div class="navbar navbar-expand-md fixed-top navbar-muted bg-danger">
-        <div class="navbar-brand">
+      <div class="navbar navbar-expand-md fixed-top navbar-light bg-danger">
+        <!-- <div class="navbar-brand">
+            <a href="#home" class="nav-link navbar-brand-link">
+              GARP
+            </a>
+        </div> -->
+        <a href="home" class="navbar-brand">
           GARP
-        </div>
+
+        </a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive" type="button">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
+          <ul class="nav navbar-nav ml-auto">
             <li class="navbar-item active">
-              <a href="#" class="nav-link active">ホーム</a>
+              <a href="#home" class="nav-link active">ホーム</a>
             </li>
             <li class="navbar-item">
               <a href="#team-philosophy" class="nav-link">理念</a>
@@ -54,13 +63,13 @@
               <a href="#player-profile" class="nav-link">選手名鑑</a>
             </li>
             <li class="navbar-item">
+              <a href="#contact-form" class="nav-link">メッセージ</a>
+            </li>
+            <li class="navbar-item">
               <a href="https://ameblo.jp/garp37" class="nav-link" target="_blank">ブログ</a>
             </li>
             <li class="navbar-item">
-              <a href="#" class="nav-link">メッセージ</a>
-            </li>
-            <li class="navbar-item">
-              <a href="#" class="nav-link">お問い合わせ</a>
+              <a href="#contact-form" class="nav-link" data-toggle="modal" data-target="#form">お問い合わせ</a>
             </li>
           </ul>
         </div>
@@ -74,11 +83,13 @@
           </div>
         </div>
       </div>
-      <div class="caption text-center">
+      <!-- <div class="caption text-center">
         <h1>GARP</h1>
-      </div>
+      </div> -->
 
-      <div class="swiper-container">
+      <!-- 以下Swiper、しかしいったんキャンセル -->
+
+      <!-- <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="https://static.wixstatic.com/media/90dbc3_b7d26205197a48379625a4a735645d0a~mv2.jpg/v1/fill/w_1500,h_787,al_c,q_85/90dbc3_b7d26205197a48379625a4a735645d0a~mv2.webp">1
@@ -91,8 +102,52 @@
           </div>
         </div>
         <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
         <div class="swiper-button-next"></div>
+      </div> -->
+      <!-- ここまでSwiper -->
+
+
+      <div id="slides" class="carousel slide carousel-fade" data-ride="carousel">
+        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselIndicators" data-slide-to="2"></li>
+          </ol>
+          <div id="carouselControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://static.wixstatic.com/media/90dbc3_b7d26205197a48379625a4a735645d0a~mv2.jpg/v1/fill/w_1500,h_787,al_c,q_85/90dbc3_b7d26205197a48379625a4a735645d0a~mv2.webp" alt="">
+                <div class="carousel-caption">
+                  <h1>GARP</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://static.wixstatic.com/media/90dbc3_32a875ccf7834f42b7df3729660aa66d~mv2.jpg/v1/fill/w_1500,h_787,al_b,q_85/90dbc3_87cbe0b7b0194d14a18b8f171aa4429a_mv2_d_4928_3264_s_4_2.webp" alt="">
+                <div class="carousel-caption">
+                  <h1>GARP</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/top-img-1.png" alt="">
+                <div class="carousel-caption">
+                  <h1>GARP</h1>
+                </div>
+              </div>
+            </div>
+            <!-- 前に戻るアイコン -->
+            <a href="#carouselControls" class="carousel-control-prev" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">前に戻る</span>
+            </a>
+            <!-- 次に送るアイコン -->
+            <a href="#carouselControls" class="carousel-control-next" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">次に送る</span>
+            </a>
+          </div>
+        </div>
       </div>
       <!-- End Landing-Page -->
 
@@ -106,9 +161,18 @@
           <h3>アツい想いを持った仲間を絶賛募集中！</h3>
         </div>
         <div class="col-md-4 text-center">
-          <a href="#">
-            <button class="btn btn-lg btn-danger" type="button" name="button">今すぐ問い合わせてみる</button>
+          <a href="#movie" class="btn btn-lg btn-danger" data-target="#movie" data-toggle="modal">
+            紹介VTRを観る！
           </a>
+          <div class="modal fade show" id="movie" aria-modal="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/z2NCTdCdYog" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+
+          </div>
+
         </div>
 
       </div>
@@ -125,14 +189,16 @@
       </div>
       <div class="intro-text text-center">
         <h1><span class="team-name">GARP</span>活動理念</h1>
+        <div class="heading-underline">
+        </div>
         <p>スポーツを通じて・・・</p>
-        <h4>楽しいと思いたい！</h4>
-        <h4>人脈を広げたい！</h4>
-        <h4>ここからの人生を広げていきたい！</h4>
+        <h4>「楽しいと思いたい！」「人脈を広げたい！」</h4>
+        <h4>「ここからの人生を広げていきたい！」</h4>
+        <h4>「人生広げた方が楽しいじゃん！」</h4>
         <p>そんな想いを持った仲間と一緒に活動してます</p>
         <br>
-        <p>一緒に野球やりたい！</p>
-        <p>プレイヤーじゃないけど応援したい！</p>
+        <h4>「一緒に野球やりたい！」</h4>
+        <h4>「プレイヤーじゃないけど応援したい！」</h4>
         <p>という方</p>
         <p>是非！一緒に楽しみませんか？？</p>
       </div>
@@ -147,7 +213,7 @@
             <div class="heading-underline">
             </div>
           </div>
-          <div class="col-6 team-info-box">
+          <div class="col-10 col-md-9 col-lg-6 team-info-box">
             <table class="team-info">
               <tr>
                 <th>発足</th>
@@ -167,7 +233,7 @@
               </tr>
               <tr>
                 <th>活動場所</th>
-                <td>都内4カ所の球場<span>神宮・高田馬場・吉祥寺</span></td>
+                <td>都内4カ所の球場<br>（神宮・高田馬場・吉祥寺）</td>
               </tr>
             </table>
             <!-- <ul class="team-info">
@@ -194,34 +260,1486 @@
       </div>
       <div class="swiper-container1">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="https://static.wixstatic.com/media/90dbc3_e3e7e4023eb0400c974c528996423823~mv2.jpg/v1/fill/w_800,h_528,al_c,q_85/90dbc3_e3e7e4023eb0400c974c528996423823~mv2.webp" alt="Swiper01"></div>
-          <div class="swiper-slide"><img src="https://static.wixstatic.com/media/90dbc3_3f5fa85db3fc4d9c9872d2b02f705ac7~mv2.jpg/v1/fill/w_799,h_529,al_c,q_85/90dbc3_3f5fa85db3fc4d9c9872d2b02f705ac7~mv2.webp" alt="Swiper02"></div>
-          <div class="swiper-slide"><img src="https://static.wixstatic.com/media/90dbc3_a92e7e5a9c074829a663f159255edc6b~mv2.jpg/v1/fill/w_800,h_528,al_c,q_85/90dbc3_a92e7e5a9c074829a663f159255edc6b~mv2.webp" alt="Swiper03"></div>
-          <div class="swiper-slide"><img src="https://static.wixstatic.com/media/90dbc3_0d21169d56cd43e28e4f872fae199ea7~mv2.jpg/v1/fill/w_799,h_529,al_c,q_85/90dbc3_0d21169d56cd43e28e4f872fae199ea7~mv2.webp" alt="Swiper04"></div>
-          <div class="swiper-slide"><img src="https://static.wixstatic.com/media/90dbc3_3854314ad33f439bbe0f79a1d1a4a5ab~mv2.jpg/v1/fill/w_800,h_528,al_c,q_85/90dbc3_3854314ad33f439bbe0f79a1d1a4a5ab~mv2.webp" alt="Swiper05"></div>
-          <div class="swiper-slide"><img src="https://static.wixstatic.com/media/90dbc3_8c7b4096a6354be38f7f4b03b6fb0986~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85/90dbc3_8c7b4096a6354be38f7f4b03b6fb0986~mv2.webp" alt="Swiper06"></div>
-          <div class="swiper-slide"><img src="https://static.wixstatic.com/media/90dbc3_12cc0c81399c4738997cdaeab90293d7~mv2.jpg/v1/fill/w_799,h_529,al_c,q_85/90dbc3_12cc0c81399c4738997cdaeab90293d7~mv2.webp" alt="Swiper07"></div>
+          <div class="swiper-slide"><img src="img/player/player-img1.png" alt="Swiper01"></div>
+          <div class="swiper-slide"><img src="img/player/player-img2.png" alt="Swiper01"></div>
+          <div class="swiper-slide"><img src="img/player/player-img3.png" alt="Swiper01"></div>
+          <div class="swiper-slide"><img src="img/player/player-img4.png" alt="Swiper01"></div>
+          <div class="swiper-slide"><img src="img/player/player-img5.png" alt="Swiper01"></div>
+          <div class="swiper-slide"><img src="img/player/player-img6.png" alt="Swiper01"></div>
+          <div class="swiper-slide"><img src="img/player/player-img7.png" alt="Swiper01"></div>
+          <div class="swiper-slide"><img src="img/player/player-img8.png" alt="Swiper01"></div>
+          <div class="swiper-slide"><img src="img/player/player-img9.png" alt="Swiper01"></div>
         </div>
       <div class="swiper-pagination1"></div>
       <div class="swiper-button-prev1"></div>
       <div class="swiper-button-next1"></div>
     </div>
-    <div class="text-center">
-      <a href="#" class="btn btn-lg btn-danger btn-player" target="_blank">
-        今すぐ選手名鑑を見る！
-      </a>
+
+      <div class="text-center">
+        <a href="#player-list" class="btn btn-lg btn-danger btn-player" data-toggle="collapse" role="button" aria-expanede="false" aria-controlls="player-list" target="_blank">
+          選手名鑑はこちら
+        </a>
+      </div>
+      <div class="container-fluid collapse" id="player-list">
+        <div class="row player-list">
+
+          <!-- 岩魚さん -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf iwana">
+            <img href="#" data-toggle="modal" data-target="#iwana" src="https://static.wixstatic.com/media/90dbc3_e3e7e4023eb0400c974c528996423823~mv2.jpg/v1/fill/w_800,h_528,al_c,q_85/90dbc3_e3e7e4023eb0400c974c528996423823~mv2.webp" alt="Swiper01">
+            <!-- 岩魚さんモーダル -->
+            <div class="container-fluid player-modal-btn">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- Start 岩魚さんモーダル -->
+                  <div class="modal fade" id="iwana">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>佐藤岩魚<span>（さとう　いわな）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>1974.2.26（ひつじ）</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>東京都</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>32年
+                                    <br>東亜学園（東東京）
+                                    <br>→YMCA社会体育専門学校
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>投手、ファースト、サード、外野（右投 右打）</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>バリー・ボンズ</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>好きなことでいつまでも「チャレンジ」出来る環境がある事に感謝！
+                                    <br>同じように「チャレンジしたい！」「チャレンジ続けたい！」という仲間と色々なことを共有して、ともに笑って、ともに感動したいです(^^)</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_e3e7e4023eb0400c974c528996423823~mv2.jpg/v1/fill/w_800,h_528,al_c,q_85/90dbc3_e3e7e4023eb0400c974c528996423823~mv2.webp" alt="">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End 岩魚モーダル -->
+                  <a href="#" data-toggle="modal" data-target="#iwana"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 岩魚さんここまで -->
+
+          <!-- ダイサクさんここから -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf daisaku">
+            <img href="#" data-toggle="modal" data-target="#daisaku" src="https://static.wixstatic.com/media/90dbc3_3f5fa85db3fc4d9c9872d2b02f705ac7~mv2.jpg/v1/fill/w_799,h_529,al_c,q_85/90dbc3_3f5fa85db3fc4d9c9872d2b02f705ac7~mv2.webp" alt="Swiper02">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- ダイサクさんモーダル開始 -->
+                  <div class="modal fade" id="daisaku">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>??<span>（??）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>??
+                                    <br>??
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>??
+                                    <br>??</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_3f5fa85db3fc4d9c9872d2b02f705ac7~mv2.jpg/v1/fill/w_799,h_529,al_c,q_85/90dbc3_3f5fa85db3fc4d9c9872d2b02f705ac7~mv2.webp" alt="">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ダイサクさんモーダル終わり -->
+
+                  <a href="#" data-toggle="modal" data-target="#daisaku"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ダイサクさんここまで -->
+
+          <!-- コージここから -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf koji">
+            <img href="#" data-toggle="modal" data-target="#koji" src="https://static.wixstatic.com/media/90dbc3_a92e7e5a9c074829a663f159255edc6b~mv2.jpg/v1/fill/w_800,h_528,al_c,q_85/90dbc3_a92e7e5a9c074829a663f159255edc6b~mv2.webp" alt="Swiper03">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- コージモーダルここから -->
+                  <div class="modal fade" id="koji">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>??<span>（??）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>??
+                                    <br>??
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>??
+                                    <br>??</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_a92e7e5a9c074829a663f159255edc6b~mv2.jpg/v1/fill/w_800,h_528,al_c,q_85/90dbc3_a92e7e5a9c074829a663f159255edc6b~mv2.webp" alt="">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- コージモーダルここまで -->
+
+                  <a href="#" data-toggle="modal" data-target="#koji"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- コージここまで -->
+
+          <!-- ムロここから -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf muro">
+            <img href="#" data-toggle="modal" data-target="#muro" src="https://static.wixstatic.com/media/90dbc3_0d21169d56cd43e28e4f872fae199ea7~mv2.jpg/v1/fill/w_799,h_529,al_c,q_85/90dbc3_0d21169d56cd43e28e4f872fae199ea7~mv2.webp">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- ムロモーダルここから -->
+                  <div class="modal fade" id="muro">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>??<span>（??）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>??
+                                    <br>??
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>??
+                                    <br>??</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_0d21169d56cd43e28e4f872fae199ea7~mv2.jpg/v1/fill/w_799,h_529,al_c,q_85/90dbc3_0d21169d56cd43e28e4f872fae199ea7~mv2.webp">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ムロモーダルここまで -->
+
+                  <a href="#" data-toggle="modal" data-target="#muro"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ムロここまで -->
+
+          <!-- とっちーここから -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf tochi">
+            <img href="#" data-toggle="modal" data-target="#tochi" src="https://static.wixstatic.com/media/90dbc3_3854314ad33f439bbe0f79a1d1a4a5ab~mv2.jpg/v1/fill/w_800,h_528,al_c,q_85/90dbc3_3854314ad33f439bbe0f79a1d1a4a5ab~mv2.webp">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- モーダルここから -->
+                  <div class="modal fade" id="tochi">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>??<span>（??）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>??
+                                    <br>??
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>??
+                                    <br>??</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_3854314ad33f439bbe0f79a1d1a4a5ab~mv2.jpg/v1/fill/w_800,h_528,al_c,q_85/90dbc3_3854314ad33f439bbe0f79a1d1a4a5ab~mv2.webp">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- モーダルここまで -->
+
+                  <a href="#" data-toggle="modal" data-target="#tochi"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- とっちーここまで -->
+
+          <!-- まさし　ここから -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf masashi">
+            <img href="#" data-toggle="modal" data-target="#masashi" src="https://static.wixstatic.com/media/90dbc3_f33044013ca14d1fa573dd70c0369c87~mv2.jpg/v1/fill/w_338,h_226,al_c,lg_1,q_80/90dbc3_f33044013ca14d1fa573dd70c0369c87~mv2.webp">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- モーダルここから -->
+                  <div class="modal fade" id="masashi">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>??<span>（??）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>??
+                                    <br>??
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>??
+                                    <br>??</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_8c7b4096a6354be38f7f4b03b6fb0986~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85/90dbc3_8c7b4096a6354be38f7f4b03b6fb0986~mv2.webp">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- モーダルここまで -->
+
+                  <a href="#" data-toggle="modal" data-target="#masashi"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- まさし　ここまで -->
+
+          <!-- たかし ここから -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf takashi">
+            <img href="#" data-toggle="modal" data-target="#takashi" src="https://static.wixstatic.com/media/90dbc3_12cc0c81399c4738997cdaeab90293d7~mv2.jpg/v1/fill/w_799,h_529,al_c,q_85/90dbc3_12cc0c81399c4738997cdaeab90293d7~mv2.webp">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- モーダルここから -->
+                  <div class="modal fade" id="takashi">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>??<span>（??）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>??
+                                    <br>??
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>??
+                                    <br>??</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_12cc0c81399c4738997cdaeab90293d7~mv2.jpg/v1/fill/w_799,h_529,al_c,q_85/90dbc3_12cc0c81399c4738997cdaeab90293d7~mv2.webp">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- モーダルここまで -->
+
+                  <a href="#" data-toggle="modal" data-target="#takashi"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- たかし　ここまで -->
+
+          <!-- うっちーここから -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf uchi">
+            <img href="#" data-toggle="modal" data-target="#uchi" src="https://static.wixstatic.com/media/90dbc3_4e8e88d1da1d4c85a67c9f820e77d32d~mv2.jpg/v1/fill/w_336,h_224,al_c,q_80,usm_0.66_1.00_0.01/90dbc3_4e8e88d1da1d4c85a67c9f820e77d32d~mv2.webp">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- モーダルここから -->
+                  <div class="modal fade" id="uchi">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>??<span>（??）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>??
+                                    <br>??
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>??
+                                    <br>??</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_1f2034a3c46a474fb8ca7b02a6d13caa~mv2_d_1726_2429_s_2.jpg/v1/crop/x_113,y_25,w_1501,h_1067/fill/w_1106,h_854,al_c,q_85,usm_0.66_1.00_0.01/90dbc3_1f2034a3c46a474fb8ca7b02a6d13caa~mv2_d_1726_2429_s_2.webp">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- モーダルここまで -->
+
+                  <a href="#" data-toggle="modal" data-target="#uchi"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- うっちーここまで -->
+
+          <!-- 増永ここから -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf masunaga">
+            <img href="#" data-toggle="modal" data-target="#masunaga" src="https://static.wixstatic.com/media/90dbc3_fa239edf17b5404c852fef72ded5eeb1~mv2.jpg/v1/fill/w_340,h_224,al_c,lg_1,q_80/90dbc3_fa239edf17b5404c852fef72ded5eeb1~mv2.webp">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- モーダルここから -->
+                  <div class="modal fade" id="masunaga">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>??<span>（??）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>??
+                                    <br>??
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>??
+                                    <br>??</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_5ec0ae789bed41b6828a6b165e3c2a9b~mv2.jpg/v1/fill/w_799,h_529,al_c,q_85/90dbc3_5ec0ae789bed41b6828a6b165e3c2a9b~mv2.webp">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- モーダルここまで -->
+
+                  <a href="#" data-toggle="modal" data-target="#masu"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 増永ここまで -->
+
+          <!-- ごーちゃんここから -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf gochan">
+            <img href="#" data-toggle="modal" data-target="#gochan" src="https://static.wixstatic.com/media/90dbc3_e92118f209964a809aeed949ccfcc1e6~mv2.jpg/v1/fill/w_338,h_226,al_c,lg_1,q_80/90dbc3_e92118f209964a809aeed949ccfcc1e6~mv2.webp">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- モーダルここから -->
+                  <div class="modal fade" id="gochan">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>??<span>（??）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>??
+                                    <br>??
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>??
+                                    <br>??</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_5d9f735207bd4a34b1e5702f02d7973d~mv2.jpg/v1/fill/w_799,h_529,al_c,q_85/90dbc3_5d9f735207bd4a34b1e5702f02d7973d~mv2.webp">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- モーダルここまで -->
+
+                  <a href="#" data-toggle="modal" data-target="#gochan"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ごーちゃんここまで -->
+
+          <!-- まことここから -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf makoto">
+            <img href="#" data-toggle="modal" data-target="#makoto" src="https://static.wixstatic.com/media/90dbc3_913c64108ff34314b291866206934358~mv2.jpg/v1/fill/w_338,h_222,al_c,lg_1,q_80/90dbc3_913c64108ff34314b291866206934358~mv2.webp">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- モーダルここから -->
+                  <div class="modal fade" id="makoto">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>??<span>（??）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>??
+                                    <br>??
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>??
+                                    <br>??</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_ace556adecf04216952f19bb567dc163~mv2.jpg/v1/fill/w_799,h_529,al_c,q_85/90dbc3_ace556adecf04216952f19bb567dc163~mv2.webp">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- モーダルここまで -->
+
+                  <a href="#" data-toggle="modal" data-target="#makoto"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- まこと ここまで -->
+
+          <!-- 小寺ゆーきここから -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf yuuki">
+            <img href="#" data-toggle="modal" data-target="#yuuki" src="https://static.wixstatic.com/media/90dbc3_b7b2d9bdc48e44fa9b5fac61d62da9d8~mv2.jpg/v1/fill/w_336,h_220,al_c,lg_1,q_80/90dbc3_b7b2d9bdc48e44fa9b5fac61d62da9d8~mv2.webp">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- モーダルここから -->
+                  <div class="modal fade" id="yuuki">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>??<span>（??）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>??
+                                    <br>??
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>??
+                                    <br>??</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_ae2101898e0e4903926ca523f7f8cc95~mv2.jpg/v1/fill/w_799,h_529,al_c,q_85/90dbc3_ae2101898e0e4903926ca523f7f8cc95~mv2.webp">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- モーダルここまで -->
+
+                  <a href="#" data-toggle="modal" data-target="#yuuki"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 小寺ゆーきここまで -->
+
+          <!-- さとけんここから -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf satoken">
+            <img href="#" data-toggle="modal" data-target="#satoken" src="https://static.wixstatic.com/media/90dbc3_a323d932d4eb45d986b6a11233c48407~mv2.jpg/v1/fill/w_336,h_224,al_c,lg_1,q_80/90dbc3_a323d932d4eb45d986b6a11233c48407~mv2.webp">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- モーダルここから -->
+                  <div class="modal fade" id="satoken">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>??<span>（??）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>??
+                                    <br>??
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>??
+                                    <br>??</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_8e1282599755425590783d52ea0edf42~mv2.jpg/v1/fill/w_799,h_529,al_c,q_85/90dbc3_8e1282599755425590783d52ea0edf42~mv2.webp">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- モーダルここまで -->
+
+                  <a href="#" data-toggle="modal" data-target="#satoken"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- さとけんここまで -->
+
+          <!-- かっちゃんここから -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf katchan">
+            <img href="#" data-toggle="modal" data-target="#katchan" src="https://static.wixstatic.com/media/90dbc3_cc90725e818543f8b5edac50c756976c~mv2.jpg/v1/fill/w_344,h_224,al_c,lg_1,q_80/90dbc3_cc90725e818543f8b5edac50c756976c~mv2.webp">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- モーダルここから -->
+                  <div class="modal fade" id="katchan">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>??<span>（??）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>??
+                                    <br>??
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>??
+                                    <br>??</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_2b3909c3222f4909934389f8be1623eb~mv2.jpg/v1/fill/w_799,h_529,al_c,q_85/90dbc3_2b3909c3222f4909934389f8be1623eb~mv2.webp">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- モーダルここまで -->
+
+                  <a href="#" data-toggle="modal" data-target="#katchan"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- かっちゃんここまで -->
+
+          <!-- つとむここから -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf tsutomu">
+            <img href="#" data-toggle="modal" data-target="#tsutomu" src="https://static.wixstatic.com/media/90dbc3_b1a9306e44d14f5aa59bf553a90c7a7e~mv2.jpg/v1/fill/w_336,h_216,al_c,lg_1,q_80/90dbc3_b1a9306e44d14f5aa59bf553a90c7a7e~mv2.webp">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- モーダルここから -->
+                  <div class="modal fade" id="tsutomu">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>??<span>（??）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>??
+                                    <br>??
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>??
+                                    <br>??</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_5badca4eb0084b1a8f57700bf20b6b52~mv2.jpg/v1/fill/w_799,h_529,al_c,q_85/90dbc3_5badca4eb0084b1a8f57700bf20b6b52~mv2.webp">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- モーダルここまで -->
+
+                  <a href="#" data-toggle="modal" data-target="#tsutomu"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- つとむここまで -->
+
+          <!-- かつここから -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf katsu">
+            <img href="#" data-toggle="modal" data-target="#katsu" src="https://static.wixstatic.com/media/90dbc3_bdb7cc288dba48e98c846097129f703d~mv2.jpg/v1/fill/w_344,h_226,al_c,q_80,usm_0.66_1.00_0.01/90dbc3_bdb7cc288dba48e98c846097129f703d~mv2.webp">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- モーダルここから -->
+                  <div class="modal fade" id="katsu">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>??<span>（??）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>??
+                                    <br>??
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>??
+                                    <br>??</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_e0e541e6cbaa491e8b5e5ad16ee0e266~mv2.jpg/v1/fill/w_800,h_533,al_c,q_85/90dbc3_e0e541e6cbaa491e8b5e5ad16ee0e266~mv2.webp">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- モーダルここまで -->
+
+                  <a href="#" data-toggle="modal" data-target="#katsu"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- かつここまで -->
+
+          <!-- のぶここから -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf nobu">
+            <img href="#" data-toggle="modal" data-target="#nobu" src="https://static.wixstatic.com/media/90dbc3_d81f149fc2df4c8598af5dc74d7417b4~mv2.jpg/v1/fill/w_332,h_228,al_c,q_80,usm_0.66_1.00_0.01/90dbc3_d81f149fc2df4c8598af5dc74d7417b4~mv2.webp">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- モーダルここから -->
+                  <div class="modal fade" id="nobu">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>??<span>（??）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>??
+                                    <br>??
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>??
+                                    <br>??</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_11935dccc8ec4b8f8134f7eb7f27c844~mv2.jpg/v1/fill/w_916,h_1034,al_c,q_85,usm_0.66_1.00_0.01/90dbc3_11935dccc8ec4b8f8134f7eb7f27c844~mv2.webp">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- モーダルここまで -->
+
+                  <a href="#" data-toggle="modal" data-target="#nobu"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- のぶここまで -->
+
+          <!-- 大野まことここから -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf onoMako">
+            <img href="#" data-toggle="modal" data-target="#onoMako" src="https://static.wixstatic.com/media/90dbc3_0947d2fffa73451e865c30bf613396a0~mv2.jpg/v1/fill/w_336,h_224,al_c,q_80,usm_0.66_1.00_0.01/90dbc3_0947d2fffa73451e865c30bf613396a0~mv2.webp">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- モーダルここから -->
+                  <div class="modal fade" id="onoMako">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>??<span>（??）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>??
+                                    <br>??
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>??
+                                    <br>??</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_0947d2fffa73451e865c30bf613396a0~mv2.jpg/v1/fill/w_800,h_528,al_c,q_85/90dbc3_0947d2fffa73451e865c30bf613396a0~mv2.webp">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- モーダルここまで -->
+
+                  <a href="#" data-toggle="modal" data-target="#onoMako"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 大野まことここまで -->
+
+
+          <!-- ゴリここから -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf gori">
+            <img href="#" data-toggle="modal" data-target="#gori" src="https://static.wixstatic.com/media/90dbc3_0947d2fffa73451e865c30bf613396a0~mv2.jpg/v1/fill/w_336,h_224,al_c,q_80,usm_0.66_1.00_0.01/90dbc3_0947d2fffa73451e865c30bf613396a0~mv2.webp">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- モーダルここから -->
+                  <div class="modal fade" id="gori">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>??<span>（??）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>??
+                                    <br>??
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>??
+                                    <br>??</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_0947d2fffa73451e865c30bf613396a0~mv2.jpg/v1/fill/w_800,h_528,al_c,q_85/90dbc3_0947d2fffa73451e865c30bf613396a0~mv2.webp">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- モーダルここまで -->
+
+                  <a href="#" data-toggle="modal" data-target="#gori"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ゴリここまで -->
+
+
+          <!-- 三浦けんすけここから -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf miura">
+            <img href="#" data-toggle="modal" data-target="#miura" src="https://static.wixstatic.com/media/90dbc3_0947d2fffa73451e865c30bf613396a0~mv2.jpg/v1/fill/w_336,h_224,al_c,q_80,usm_0.66_1.00_0.01/90dbc3_0947d2fffa73451e865c30bf613396a0~mv2.webp">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- モーダルここから -->
+                  <div class="modal fade" id="miura">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>??<span>（??）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>??
+                                    <br>??
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>??
+                                    <br>??</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_0947d2fffa73451e865c30bf613396a0~mv2.jpg/v1/fill/w_800,h_528,al_c,q_85/90dbc3_0947d2fffa73451e865c30bf613396a0~mv2.webp">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- モーダルここまで -->
+
+                  <a href="#" data-toggle="modal" data-target="#miura"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 三浦けんすけここまで -->
+
+
+          <!-- サンプルここから -->
+          <div class="col-6 col-md-4 col-lg-3 player-pf sample">
+            <img href="#" data-toggle="modal" data-target="#sample" src="https://static.wixstatic.com/media/90dbc3_0947d2fffa73451e865c30bf613396a0~mv2.jpg/v1/fill/w_336,h_224,al_c,q_80,usm_0.66_1.00_0.01/90dbc3_0947d2fffa73451e865c30bf613396a0~mv2.webp">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 text-center">
+
+                  <!-- モーダルここから -->
+                  <div class="modal fade" id="sample">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1>??<span>（??）</span></h1>
+                        </div>
+                        <div class="modal-body">
+                          <div class="modal-left">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>生年月日</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>出身</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>野球歴</th>
+                                  <td>??
+                                    <br>??
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th>ポジション</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>好きな選手</th>
+                                  <td>??</td>
+                                </tr>
+                                <tr>
+                                  <th>一言！</th>
+                                  <td>??
+                                    <br>??</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="modal-right">
+                            <img src="https://static.wixstatic.com/media/90dbc3_0947d2fffa73451e865c30bf613396a0~mv2.jpg/v1/fill/w_800,h_528,al_c,q_85/90dbc3_0947d2fffa73451e865c30bf613396a0~mv2.webp">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- モーダルここまで -->
+
+                  <a href="#" data-toggle="modal" data-target="#sample"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- サンプルここまで -->
+
+        </div>
+      </div>
     </div>
   </div>
+
+
+  <!-- モーダルのベース -->
+  <!-- <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="modal fade" id="muro">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1>ムロ</h1>
+              </div>
+              <div class="modal-body">
+                ムロです
+              </div>
+              <div class="modal-footer">
+                <input class="btn btn-danger" data-dismiss="modal" value="close">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <a href="#" data-toggle="modal" data-target="#muro">見る</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- モーダルのベース -->
+
+
+
     <!-- End 選手名鑑 -->
 
     <!-- Start Contactform  -->
     <div id="contact-form" class="container-fluid">
       <div class="col-12 text-center contact-form-img">
         <div class="message-box">
-          <h2 class="message">このページをご覧になっている方へ</h2>
-          <p>自分も一緒にプレーしたい！</p>
-          <p>野球大好きだから見に行きたい！</p>
-          <p>GARPを応援したい♡</p>
+          <h2 class="message">最後に一言！</h2>
+          <div class="heading-underline">
+          </div>
+          <p>「自分も一緒にプレーしたい！」</p>
+          <p>「野球大好きだから見に行きたい！」</p>
+          <p>「GARPを応援したい♡」</p>
           <br>
           <p>そんな風に思っているあなた！
           <br>
@@ -229,10 +1747,96 @@
           <br>
           気になる方はメッセージをどうぞ</p>
         </div>
-        <div class="contact-form-area">
-
-
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="modal fade" id="form">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                    </div>
+                    <div class="modal-body">
+                      <div id="formWrapper">
+                        <div class="formitt">
+                          <h2>お問い合わせ</h2>
+                        </div>
+                        <div class="contact-form-area text-center">
+                          <form class="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeyjVxlP2f8OPvHCQ7zPzItQsglVipIaRmgDw3jFgG3RUymyA/formResponse" method="post" name="myForm" target="dummyIframe">
+                            <input class="contact-name" type="text" name="entry.2005620554" value="" autocomplete="name" placeholder="お名前（必須）" required>
+                            <input class="contact-email" type="email" name="entry.1045781291" value="" autocomplete="email" placeholder="メールアドレス（必須）" required>
+                            <input class="contact-title" type="text" name="entry.1065046570" value="" placeholder="件名">
+                            <textarea class="contact-message" name="entry.839337160" placeholder="お問い合わせ内容（必須）" required></textarea>
+                            <input class="submit-btn" type="submit" name="" value="送信">
+                          </form>
+                          <!-- <iframe name="dummyIframe" style="display:none;" onload="showThxMessage()"></iframe> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <input class="btn btn-danger" data-dismiss="modal" value="閉じる">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="btn btn-lg btn-danger form-btn" href="form" data-toggle="modal" data-target="#form">メッセージを送る！</a>
+          </div>
         </div>
+
+
+        <!-- 問い合わせフォームの定型→モーダルの中で完結する？ -->
+        <!-- <div id="formWrapper">
+          <div class="formitt">
+            <h2>お問い合わせ</h2>
+          </div>
+          <div class="contact-form-area text-center">
+            <form class="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeyjVxlP2f8OPvHCQ7zPzItQsglVipIaRmgDw3jFgG3RUymyA/formResponse" method="post" name="myForm" target="dummyIframe">
+              <input class="contact-name" type="text" name="entry.2005620554" value="" autocomplete="name" placeholder="お名前（必須）" required>
+              <input class="contact-email" type="email" name="entry.1045781291" value="" autocomplete="email" placeholder="メールアドレス（必須）" required>
+              <input class="contact-title" type="text" name="entry.1065046570" value="" placeholder="件名">
+              <textarea class="contact-message" name="entry.839337160" placeholder="お問い合わせ内容（必須）" required></textarea>
+              <input class="submit-btn" type="submit" name="" value="送信">
+            </form>
+          </div>
+        </div> -->
+        <!-- 問い合わせフォームの定型ここまで -->
+
+
+
+        <!-- <div id="thxMessage" class="animated fadeIN" style="display:none;">
+          <div class="afterformitt">
+            お問い合わせありがとうございました！
+          </div>
+        </div> -->
+
+
+
+
+        <!-- <div class="contact-form-area">
+          <div class="contact-name">
+            <label for="name">お名前</label>
+            <br>
+            <input type="text" name="name" value="お名前">
+          </div>
+          <div class="contact-email">
+            <label for="email">メールアドレス</label>
+            <br>
+            <input type="text" name="email" value="メールアドレス">
+          </div>
+          <div class="contact-title">
+            <label for="title">件名</label>
+            <br>
+            <input type="text" name="title" value="title">
+          </div>
+          <div class="contact-message">
+            <label for="message">メッセージ</label>
+            <br>
+            <textarea name="name" rows="8" cols="80"></textarea>
+
+          </div>
+
+
+        </div> -->
       </div>
 
 
@@ -244,19 +1848,19 @@
     <!-- End Contactform  -->
 
     <!-- Start Footer -->
-    <hr>
+    <!-- <hr> -->
     <footer>
       <div class="container-fluid text-center">
         <div class="col-md-5">
         </div>
-        <div class="col-12 social">
-          <a href="#">
+        <div class="col-12 social-icons">
+          <a href="#" class="social-icon fb">
             <i class="fab fa-facebook"></i>
           </a>
-          <a href="#">
+          <a href="#" class="social-icon tw">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="#">
+          <a href="#" class="social-icon ig">
             <i class="fab fa-instagram"></i>
           </a>
         </div>
@@ -272,7 +1876,9 @@
     <!-- Start back-to-top-icon -->
 
     <div id="back-to-top" style="position:fixed;right:40px;bottom:5px;z-index:2000">
-      <a href="#">🔺</a>
+      <a href="#">
+        <i class="fas fa-arrow-circle-up"></i>
+      </a>
     </div>
     <div id="pos" style="position:fixed;left:5px;bottom:5px;color:white">
     </div>
@@ -299,17 +1905,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- swiper用 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-
     <script>
-
-      $(function(){
-      $("#back-to-top").click(function() {
-      $('body, html').animate({scrollTop: 0}, 1000, 'linear');
-      });
-      });
-
-
       var swiper = new Swiper('.swiper-container', {
         navigation: {
           nextEl: '.swiper-button-next',
@@ -327,7 +1926,6 @@
         speed: 1500,
       });
 
-
       var swiper1 = new Swiper('.swiper-container1', {
         navigation: {
           nextEl: '.swiper-button-next1',
@@ -338,18 +1936,40 @@
           clickable: true,
         },
         autoplay: {
-          delay: 500,
+          delay: 10,
           disableOnInteraction: true,
         },
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 30,
         slidesPerGroup: 1,
-        centeredSlides: true,
+        centeredSlides: false,
         loopFillGroupWithBlank: true,
         loop: true,
         speed: 1500,
+        breakpoints: {
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          }
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          }
+        },
       });
+
+
     </script>
+    <!-- End swiper用 -->
+    <!-- Smooth Scroll用 -->
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <!-- End Smooth Scroll用 -->
+
 
 
   </body>
