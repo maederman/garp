@@ -1,0 +1,153 @@
+@media (max-width: 992px){
+  #player-profile .modal-content {
+    width:70%!important;
+  }
+   #player-profile .modal-body {
+    flex-direction: column-reverse;
+  }
+  #player-profile h1 {
+    font-size: 2rem;
+  }
+  #player-profile table {
+    font-size: .5rem;
+    line-height: .7rem;
+  }
+  #player-profile .modal-left {
+    margin: 0 auto;
+    width: 80%;
+  }
+  #player-profile .modal-right {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+}
+
+
+
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    text-shadow: 10px 10px 10px black;
+  }
+  #contact-top h3 {
+    margin-bottom: 1.5rem;
+  }
+  #team-philosophy h1 {
+    font-size: 2rem;
+  }
+  #team-philosophy span {
+    font-size: 2rem!important;
+  }
+  #team-philosophy p {
+    font-size: 1.1rem;
+  }
+  #team-philosophy h4 {
+    font-size: 1.4rem;
+  }
+  #team-introduction h3 {
+    font-size: 1.4rem;
+  }
+  #team-introduction th,
+  #team-introduction td {
+    font-size: 1.2rem;
+  }
+  #player-profile .modal-content {
+    width:80%!important;
+  }
+   #player-profile .modal-body {
+    flex-direction: column-reverse;
+  }
+  #player-profile h1 {
+    font-size: 2rem;
+  }
+  #player-profile table {
+    font-size: .7rem;
+    line-height: .9rem;
+  }
+  #player-profile .modal-left {
+    margin: 0 auto;
+    width: 80%;
+  }
+  #player-profile .modal-right {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+
+@media (max-width: 576px) {
+  .carousel-caption h1 {
+    font-size: 3rem;
+    text-shadow: 5px 5px 5px black;
+  }
+  #contact-top h3 {
+    font-size: 1.4rem;
+  }
+  #contact-top .btn {
+    font-size: 1.4rem;
+    width: 60%;
+  }
+  #contact-top .modal-content {
+    width: 80%;
+  }
+  #team-philosophy h1 {
+    font-size: 2rem;
+  }
+  #team-philosophy span {
+    font-size: 2rem!important;
+  }
+  #team-philosophy p {
+    font-size: 1.1rem;
+  }
+  #team-philosophy h4 {
+    font-size: 1.4rem;
+  }
+  #team-introduction h3 {
+    font-size: 1.4rem;
+  }
+  #team-introduction th,
+  #team-introduction td {
+    font-size: 1.2rem;
+  }
+  #player-profile .modal-content {
+    width:90%!important;
+  }
+   #player-profile .modal-body {
+    flex-direction: column-reverse;
+  }
+  #player-profile h1 {
+    font-size: 1.4rem;
+  }
+  #player-profile table {
+    font-size: .5rem;
+    line-height: .7rem;
+  }
+  #player-profile .modal-left {
+    margin: 0 auto;
+    width: 80%;
+  }
+  #player-profile .modal-right {
+    margin: 0 auto;
+    width: 80%;
+  }
+  #contact-form h2 {
+    font-size: 1.4rem;
+  }
+  #contact-form p {
+    font-size: 1.3rem;
+  }
+  #contact-form .btn {
+    font-size: 1rem;
+  }
+  #contact-form .modal-content {
+    width: 80%!important;
+
+
+  }
+
+
+
+
+
+}
