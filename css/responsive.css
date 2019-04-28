@@ -81,34 +81,68 @@
     font-size: 3rem;
     text-shadow: 5px 5px 5px black;
   }
+  #contact-top .jumbotron {
+    padding: 1rem 1rem!important;
+  }
   #contact-top h3 {
-    font-size: 1.4rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
   #contact-top .btn {
-    font-size: 1.4rem;
+    font-size: 1rem;
     width: 60%;
+    padding: .3rem .5rem;
   }
   #contact-top .modal-content {
     width: 80%;
   }
+  #team-philosophy .intro {
+    height: 330px;
+  }
+  #team-philosophy .intro-text {
+    top: 4%;
+  }
   #team-philosophy h1 {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
   #team-philosophy span {
-    font-size: 2rem!important;
+    font-size: 1.3rem!important;
+  }
+  #team-philosophy .heading-underline {
+    margin: .5rem auto;
+    width: 40%;
   }
   #team-philosophy p {
-    font-size: 1.1rem;
+    font-size: .8rem;
   }
   #team-philosophy h4 {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   #team-introduction h3 {
-    font-size: 1.4rem;
+    font-size: 1rem;
+    margin-top: 1rem!important;
+  }
+  #team-introduction .heading-underline {
+    margin: .5rem auto;
+    width: 40%;
+  }
+  #team-introduction .team-info-box {
+    margin: 0 auto;
+  }
+  #team-introduction .team-info {
+    margin: 1rem auto;
   }
   #team-introduction th,
   #team-introduction td {
-    font-size: 1.2rem;
+    font-size: .8rem;
+    line-height: .8rem;
+  }
+  #player-profile h3 {
+    margin-top: 1rem!important;
+  }
+  #player-profile .heading-underline {
+    margin: .5rem auto;
+    width: 40%;
   }
   #player-profile .modal-content {
     width:90%!important;
@@ -119,10 +153,14 @@
   #player-profile h1 {
     font-size: 1.4rem;
   }
+  #player-profile h3 {
+    font-size: 1rem;
+  }
   #player-profile table {
     font-size: .5rem;
     line-height: .7rem;
   }
+
   #player-profile .modal-left {
     margin: 0 auto;
     width: 80%;
@@ -131,19 +169,69 @@
     margin: 0 auto;
     width: 80%;
   }
+  #player-profile .btn {
+    margin: 1.5rem auto!important;
+    font-size: 1rem;
+  }
+  #player-list {
+    padding: 0px;
+  }
+  .player-pf {
+    padding: 0px!important;
+  }
+  .player-pf img {
+    padding: .5rem;
+  }
+  .contact-form-img {
+    padding: 1rem!important;
+  }
   #contact-form h2 {
-    font-size: 1.4rem;
+    font-size: 1rem;
+  }
+  #contact-form .heading-underline {
+    margin: .5rem auto;
+    width: 40%;
   }
   #contact-form p {
-    font-size: 1.3rem;
+    font-size: 1rem;
+    margin-bottom: .2rem!important;
+  }
+  #contact-form .kaigyo {
+    display: none;
   }
   #contact-form .btn {
-    font-size: 1rem;
+    font-size: .8rem;
+    padding: .5rem;
+    margin: 1rem auto;
   }
   #contact-form .modal-content {
     width: 80%!important;
+  }
+  #contact-form .formitt {
+    margin: .5rem;
+  }
+  #contact-form .contact-form-area {
+    width: 85%;
+  }
+  #formWrapper input,
+  #formWrapper textarea {
+    padding: .1rem;
+  }
+  #formWrapper .submit-btn {
+    font-size: 1rem;
+  }
+  #contact-form .btn {
+    margin: 0 auto;
+  }
 
-
+  footer {
+    margin: 1rem;
+  }
+  footer .social-icons {
+    font-size: 2rem;
+  }
+  footer h5 {
+    margin: 1rem;
   }
 
 
