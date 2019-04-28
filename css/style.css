@@ -74,6 +74,9 @@ body {
 /* End Swiper  */
 
 /* Start carousel */
+#slides {
+  margin-top: 56px;
+}
 #slides img {
   width: 100%;
 }
