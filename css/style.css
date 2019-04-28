@@ -3,7 +3,10 @@ body {
   width: 100%;
 
 }
-
+#home {
+  margin-top: -56px;
+  padding-top: 56px;
+}
 /* Start Home section */
 .navbar {
   /* height: 56px;
@@ -108,13 +111,8 @@ height: 50px!important;
   font-weight: 800;
   text-shadow: 10px 10px 10px black;
   letter-spacing: 1rem;
-
 }
-
-
-
 /* End carousel */
-
 
 .caption {
   z-index: 100;
@@ -159,6 +157,8 @@ height: 50px!important;
 /* Start Team philosophy section */
 #team-philosophy {
   position: relative;
+  margin-top: -56px;
+  padding-top: 56px;
 }
 .intro {
   padding: 30px 24px;
@@ -203,8 +203,12 @@ height: 50px!important;
 
 
 /* Start Team introduction  */
+#team-introduction {
+  margin-top: -56px;
+  padding-top: 56px;
+}
 #team-introduction .heading {
-  margin-top: 56px;
+  margin-top: 1rem;
   font-weight: 700;
 }
 #team-introduction .heading-underline {
@@ -241,9 +245,11 @@ height: 50px!important;
 #player-profile {
   background-color: black;
   overflow: hidden;
+  margin-top: -56px;
+  padding-top: 56px;
 }
 #player-profile .heading {
-  margin-top: 56px;
+  margin-top: 1rem;
   color: white;
   font-weight: 700;
 }
@@ -426,9 +432,11 @@ table td{
   background-position: center center;
   background-size: cover;
   padding: 0px!important;
+  margin-top: -56px;
+  padding-top: 56px!important;
 }
 #contact-form .contact-form-img {
-  padding: 56px  0px 3rem;
+  padding: 1rem  0px 3rem;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.5);
 }
