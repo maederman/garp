@@ -144,7 +144,7 @@
     line-height: .8rem;
   }
   #player-profile h3 {
-    margin-top: 1rem!important;
+    /* margin-top: 1rem!important; */
   }
   #player-profile .heading-underline {
     margin: .5rem auto;
@@ -205,7 +205,7 @@
   }
   #contact-form p {
     font-size: 1rem;
-    margin-bottom: .2rem!important;
+    margin-bottom: .5rem!important;
   }
   #contact-form .kaigyo {
     display: none;
@@ -245,9 +245,4 @@
   #back-to-top {
     right: 15px!important;
   }
-
-
-
-
-
 }
