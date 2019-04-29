@@ -139,6 +139,7 @@ height: 50px!important;
 #contact-top .jumbotron {
   margin-bottom: 0px;
   background-color: black;
+  border-radius: 0px!important;
 }
 #contact-top h3 {
   color: white;
