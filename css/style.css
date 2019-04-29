@@ -174,7 +174,7 @@ height: 50px!important;
   opacity: 1;
   position: absolute;
   left:50%;
-  top: 11%;
+  top: 14%;
   transform: translateY(-50%);
   transform: translateX(-50%);
   font-weight: 400;
@@ -189,7 +189,7 @@ height: 50px!important;
 }
 #team-philosophy .heading-underline{
   border-top: 1px solid black;
-  width: 20%;
+  width: 30%;
   margin: 1rem auto;
 }
 .intro-text h1, h4, p {
@@ -208,6 +208,9 @@ height: 50px!important;
   padding-top: 56px;
   overflow: hidden;
   padding-bottom: 2rem;
+}
+#team-introduction .row {
+  padding-top: 1rem!important;
 }
 #team-introduction .heading {
   margin-top: 1rem;
@@ -254,7 +257,7 @@ height: 50px!important;
 }
 .player-profile-content {
   background-color: black;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 #player-profile .heading {
   /* margin-top: 1rem; */
@@ -389,7 +392,7 @@ table{
 }
 
 table tr{
-  border-bottom: solid 2px white;
+  /* border-bottom: solid 2px white; */
 }
 
 table tr:last-child{
@@ -452,7 +455,7 @@ table td{
   background-size: cover;
 }
 #contact-form .contact-form-img {
-  padding: 56px  0px 3rem;
+  padding: 2rem  0px 3rem;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -551,16 +554,24 @@ table td{
 
 /* Start Footer */
 footer {
-  margin: 3rem;
+  padding: 2rem 0 0;
+  background-color: #e9ecef;
+}
+footer .container-fluid {
+  padding: 0px!important;
 }
 .social-icons {
   font-size: 3rem;
+  /* padding: 1rem; */
 }
 .social-icon {
   padding: 1rem;
 }
 footer h5 {
-  margin: 2rem;
+  margin-top: 1.5rem;
+  padding: .5rem;
+  border-top: 1px solid gray;
+  margin-bottom: 0px!important;
 }
 .social-icon.fb {
   color: #3b5998;
