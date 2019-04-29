@@ -234,13 +234,15 @@
 
 
   footer {
-    margin: 1rem;
+    /* margin: 1rem; */
   }
   footer .social-icons {
     font-size: 2rem;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   footer h5 {
-    margin: 1rem;
+    /* margin: 1rem; */
   }
   #back-to-top {
     right: 15px!important;
